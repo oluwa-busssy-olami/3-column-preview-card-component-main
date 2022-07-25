@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 95%);
+}
+
+.flex {
+    width: 52%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.class {
+    display: flex;
+    height: 56vh;
+}
+
+.class img {
+    margin-top: 1em;
+}
+
+.class h1 {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 1rem;
+    font-size: 2.6rem;
+}
+
+.class p {
+    margin-top: 3em;
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 5rem;
+}
+
+.class a {
+    border: 2px solid #fff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+a:hover {
+    background: transparent;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+.col-one a {
+    color: hsl(31, 77%, 52%);
+}
+
+.col-one a:hover {
+    color: #fff;
+}
+
+.col-two a:hover {
+    color: #fff;
+}
+
+.col-three a:hover {
+    color: #fff;
+}
+
+.col-two a {
+    color: hsl(184, 100%, 22%);
+}
+
+.col-three a {
+    color: hsl(179, 100%, 13%);
+}
+
+.class .col-one {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3.5em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.class .col-two {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3.5em;
+}
+
+.class .col-three {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3.5em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width:375px) {
+    .flex {
+        width: 98%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-wrap: wrap;
+    }
+    img {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .class a {
+        border: 2px solid #fff;
+        text-decoration: none;
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+    }
+    .col-one {
+        border-radius: 10px 10px 0 0;
+    }
+    .col-three {
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    h1 {
+        font-size: 20px;
+        padding: 15px;
+    }
+    p {
+        padding: 10px;
+    }
+}
+
+@media (max-width:1440px) {
+    .class {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+}
